@@ -1,0 +1,60 @@
+{
+  "name": "react-chat",
+  "version": "1.0.0",
+  "description": "React based chat application using socket.io as the node engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "build": "webpack",
+    "start": "webpack-dashboard webpack-dev-server --progress --inline --hot"
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/jest.setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "author": "Jordan Watson",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "pusher": "^1.5.1",
+    "pusher-js": "^4.2.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-promise": "^0.5.3",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jest": "^22.4.2",
+    "node-sass": "^4.7.2",
+    "react-hot-loader": "^1.3.0",
+    "react-test-renderer": "^16.2.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dashboard": "^1.1.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
